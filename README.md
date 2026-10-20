@@ -183,3 +183,4 @@ promt/
 
 Ushbu loyiha shaxsiy va tijoriy foydalanish uchun ochiq.
 O'zgartiring, rivojlantiring va o'z orzuingizdagi dasturchi ishiga erishing! 🚀
+# ropo
