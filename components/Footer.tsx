@@ -83,9 +83,6 @@ export default function Footer() {
               <Link href="/#projects" className="hover:text-cyan-400 transition-colors py-1">
                 Loyihalar
               </Link>
-              <Link href="/#experience" className="hover:text-cyan-400 transition-colors py-1">
-                Ta&apos;lim &amp; Xronologiya
-              </Link>
               <Link href="/#contact" className="hover:text-cyan-400 transition-colors py-1">
                 Bog&apos;lanish
               </Link>

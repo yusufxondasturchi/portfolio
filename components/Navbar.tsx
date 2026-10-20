@@ -12,7 +12,6 @@ const navLinks = [
   { href: "/#about", label: "Men haqimda" },
   { href: "/#skills", label: "Ko'nikmalar" },
   { href: "/#projects", label: "Loyihalar" },
-  { href: "/#experience", label: "Ta'lim" },
   { href: "/#contact", label: "Bog'lanish" },
 ];
 
@@ -28,7 +27,7 @@ export default function Navbar() {
 
       // Detect active section if on homepage
       if (pathname === "/") {
-        const sections = ["home", "about", "skills", "projects", "experience", "contact"];
+        const sections = ["home", "about", "skills", "projects", "contact"];
         const current = sections.find((section) => {
           const el = document.getElementById(section);
           if (el) {
