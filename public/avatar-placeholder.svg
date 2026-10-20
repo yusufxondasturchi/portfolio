@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050b14"/>
+      <stop offset="50%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#020c1b"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="electricHalo" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="32" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="170" r="140" fill="url(#electricHalo)"/>
+
+  <!-- Cybernetic Grid Circles -->
+  <circle cx="200" cy="180" r="110" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.4"/>
+  <circle cx="200" cy="180" r="130" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+
+  <!-- Avatar Silhouette -->
+  <!-- Body / Shoulders -->
+  <path d="M120 340 C120 280, 150 260, 200 260 C250 260, 280 280, 280 340 Z" fill="#0f2744" stroke="#00f0ff" stroke-width="2" opacity="0.9"/>
+  <!-- Hoodie / Collar Accent -->
+  <path d="M170 260 L200 300 L230 260" fill="none" stroke="#00f0ff" stroke-width="2.5" opacity="0.8"/>
+
+  <!-- Head -->
+  <circle cx="200" cy="180" r="50" fill="#132e52" stroke="url(#glowGrad)" stroke-width="3" filter="url(#glowFilter)"/>
+  
+  <!-- Headphones / Tech Visor -->
+  <path d="M145 180 C145 140, 255 140, 255 180" fill="none" stroke="#00f0ff" stroke-width="5" stroke-linecap="round"/>
+  <rect x="138" y="170" width="14" height="26" rx="7" fill="#00f0ff" filter="url(#glowFilter)"/>
+  <rect x="248" y="170" width="14" height="26" rx="7" fill="#00f0ff" filter="url(#glowFilter)"/>
+
+  <!-- Glowing Glasses / Tech Eyes -->
+  <rect x="175" y="170" width="22" height="10" rx="3" fill="#00f0ff"/>
+  <rect x="203" y="170" width="22" height="10" rx="3" fill="#00f0ff"/>
+  <line x1="197" y1="175" x2="203" y2="175" stroke="#00f0ff" stroke-width="2"/>
+
+  <!-- Floating Code Badges -->
+  <g transform="translate(45, 120)" opacity="0.85">
+    <rect width="64" height="28" rx="8" fill="#0b203a" stroke="#00f0ff" stroke-width="1.5"/>
+    <text x="32" y="18" fill="#00f0ff" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">&lt;DEV/&gt;</text>
+  </g>
+
+  <g transform="translate(290, 130)" opacity="0.85">
+    <rect width="64" height="28" rx="8" fill="#0b203a" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="32" y="18" fill="#60a5fa" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">{TS}</text>
+  </g>
+
+  <g transform="translate(160, 345)">
+    <rect width="80" height="24" rx="12" fill="#00f0ff" opacity="0.9"/>
+    <text x="40" y="16" fill="#030712" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">ONLINE</text>
+  </g>
+</svg>

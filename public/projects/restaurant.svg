@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="restBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120c08"/>
+      <stop offset="100%" stop-color="#080503"/>
+    </linearGradient>
+    <linearGradient id="foodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#restBg)"/>
+  <rect x="20" y="20" width="760" height="460" rx="16" fill="#181310" stroke="#33241b" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="20" y="20" width="760" height="50" rx="16" fill="#221b16"/>
+  <circle cx="50" cy="45" r="6" fill="#ef4444"/>
+  <circle cx="70" cy="45" r="6" fill="#f59e0b"/>
+  <circle cx="90" cy="45" r="6" fill="#10b981"/>
+  <text x="130" y="50" fill="#f8fafc" font-family="serif" font-size="15" font-weight="bold">🍴 GOURMET BISTRO</text>
+
+  <!-- Nav links -->
+  <text x="460" y="49" fill="#00f0ff" font-family="sans-serif" font-size="11">Taomnoma</text>
+  <text x="540" y="49" fill="#94a3b8" font-family="sans-serif" font-size="11">Biz haqimizda</text>
+  <text x="630" y="49" fill="#94a3b8" font-family="sans-serif" font-size="11">Yetkazib berish</text>
+  <rect x="690" y="33" width="75" height="26" rx="13" fill="#00f0ff"/>
+  <text x="727" y="49" fill="#030712" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Stol Band</text>
+
+  <!-- Hero inside Restaurant -->
+  <g transform="translate(50, 95)">
+    <rect width="700" height="150" rx="12" fill="#241a14" stroke="#3d2c20" stroke-width="1.5"/>
+    <circle cx="580" cy="75" r="55" fill="#00f0ff" fill-opacity="0.1" stroke="#00f0ff" stroke-width="1"/>
+    <!-- Plate & Cloche Motif -->
+    <circle cx="580" cy="75" r="35" fill="none" stroke="#00f0ff" stroke-width="2"/>
+    <path d="M560 75 Q580 50, 600 75" fill="none" stroke="#00f0ff" stroke-width="2"/>
+    <circle cx="580" cy="50" r="3" fill="#00f0ff"/>
+
+    <text x="40" y="55" fill="#00f0ff" font-family="monospace" font-size="12" letter-spacing="2">NOZ-NE'MATLAR VA LAZZAT</text>
+    <text x="40" y="90" fill="#ffffff" font-family="sans-serif" font-size="26" font-weight="bold">Unutilmas Ta'm va Qulay Muhit</text>
+    <text x="40" y="115" fill="#94a3b8" font-family="sans-serif" font-size="12">Yevropa va milliy taomlar, xushbo'y qahva hamda mualliflik desertlari</text>
+  </g>
+
+  <!-- Menu Cards Row -->
+  <!-- Item 1 -->
+  <g transform="translate(50, 270)">
+    <rect width="215" height="175" rx="10" fill="#201712" stroke="#38271e" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#00f0ff" fill-opacity="0.15"/>
+    <text x="40" y="46" fill="#00f0ff" font-size="18" text-anchor="middle">🥩</text>
+    <text x="70" y="44" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">Ribeye Steyk</text>
+    <text x="25" y="85" fill="#94a3b8" font-family="sans-serif" font-size="11">Marmar mol go'shti, grill sabzavotlar va rozmarin sousi.</text>
+    <text x="25" y="140" fill="#00f0ff" font-family="sans-serif" font-size="16" font-weight="bold">145,000 UZS</text>
+    <rect x="145" y="122" width="55" height="24" rx="6" fill="#38271e"/>
+    <text x="172" y="137" fill="#e2e8f0" font-family="sans-serif" font-size="9" text-anchor="middle">Buyurtma</text>
+  </g>
+
+  <!-- Item 2 -->
+  <g transform="translate(290, 270)">
+    <rect width="215" height="175" rx="10" fill="#201712" stroke="#00f0ff" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="20" fill="#00f0ff" fill-opacity="0.2"/>
+    <text x="40" y="46" fill="#00f0ff" font-size="18" text-anchor="middle">🍝</text>
+    <text x="70" y="44" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">Fettuccine Alfredo</text>
+    <text x="25" y="85" fill="#94a3b8" font-family="sans-serif" font-size="11">Klassik italyan pastasi, parmezan pishlog'i va qaymoqli sous.</text>
+    <text x="25" y="140" fill="#00f0ff" font-family="sans-serif" font-size="16" font-weight="bold">75,000 UZS</text>
+    <rect x="145" y="122" width="55" height="24" rx="6" fill="#00f0ff"/>
+    <text x="172" y="137" fill="#030712" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Buyurtma</text>
+  </g>
+
+  <!-- Item 3 -->
+  <g transform="translate(530, 270)">
+    <rect width="215" height="175" rx="10" fill="#201712" stroke="#38271e" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#00f0ff" fill-opacity="0.15"/>
+    <text x="40" y="46" fill="#00f0ff" font-size="18" text-anchor="middle">🍰</text>
+    <text x="70" y="44" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">San Sebastian</text>
+    <text x="25" y="85" fill="#94a3b8" font-family="sans-serif" font-size="11">Qovurilgan kremli pishloqli tort, issiq shokolad quyilishi bilan.</text>
+    <text x="25" y="140" fill="#00f0ff" font-family="sans-serif" font-size="16" font-weight="bold">45,000 UZS</text>
+    <rect x="145" y="122" width="55" height="24" rx="6" fill="#38271e"/>
+    <text x="172" y="137" fill="#e2e8f0" font-family="sans-serif" font-size="9" text-anchor="middle">Buyurtma</text>
+  </g>
+</svg>

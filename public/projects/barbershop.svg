@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="barberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d12"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </linearGradient>
+    <linearGradient id="goldCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#barberBg)"/>
+  <rect x="20" y="20" width="760" height="460" rx="16" fill="#12131a" stroke="#252836" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="20" y="20" width="760" height="50" rx="16" fill="#181a24"/>
+  <circle cx="50" cy="45" r="6" fill="#ef4444"/>
+  <circle cx="70" cy="45" r="6" fill="#f59e0b"/>
+  <circle cx="90" cy="45" r="6" fill="#10b981"/>
+  <text x="130" y="50" fill="#f8fafc" font-family="serif" font-size="15" font-weight="bold">✂ THE ROYAL BARBERSHOP</text>
+
+  <!-- Nav links -->
+  <text x="460" y="49" fill="#00f0ff" font-family="sans-serif" font-size="11">Xizmatlar</text>
+  <text x="540" y="49" fill="#94a3b8" font-family="sans-serif" font-size="11">Ustalar</text>
+  <text x="610" y="49" fill="#94a3b8" font-family="sans-serif" font-size="11">Galereya</text>
+  <rect x="670" y="33" width="90" height="26" rx="13" fill="#00f0ff"/>
+  <text x="715" y="49" fill="#030712" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Bron Qilish</text>
+
+  <!-- Hero inside Barbershop -->
+  <g transform="translate(50, 95)">
+    <rect width="700" height="150" rx="12" fill="#181a26" stroke="#2a2e42" stroke-width="1.5"/>
+    <circle cx="580" cy="75" r="55" fill="#00f0ff" fill-opacity="0.1" stroke="#00f0ff" stroke-width="1"/>
+    <!-- Barber Pole Motif -->
+    <rect x="565" y="30" width="30" height="90" rx="8" fill="#12131a" stroke="#00f0ff" stroke-width="2"/>
+    <path d="M565 45 L595 65 M565 65 L595 85 M565 85 L595 105" stroke="#ef4444" stroke-width="3"/>
+    
+    <text x="40" y="55" fill="#00f0ff" font-family="monospace" font-size="12" letter-spacing="2">PREMIUM ERKAKLAR SALONI</text>
+    <text x="40" y="90" fill="#ffffff" font-family="sans-serif" font-size="26" font-weight="bold">Mukammal Uslub va O'ziga Ishonch</text>
+    <text x="40" y="115" fill="#94a3b8" font-family="sans-serif" font-size="12">Zamonaviy soch turmaklari, soqol parvarishi va an'anaviy ustara xizmatlari</text>
+  </g>
+
+  <!-- Service Cards Row -->
+  <!-- Service 1 -->
+  <g transform="translate(50, 270)">
+    <rect width="215" height="175" rx="10" fill="#181b29" stroke="#2a2e42" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#00f0ff" fill-opacity="0.15"/>
+    <text x="40" y="46" fill="#00f0ff" font-size="18" text-anchor="middle">✂</text>
+    <text x="70" y="44" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">Klassik Soch Turmagi</text>
+    <text x="25" y="85" fill="#94a3b8" font-family="sans-serif" font-size="11">Bosh yuvish, individual uslub tanlash va styling.</text>
+    <text x="25" y="140" fill="#00f0ff" font-family="sans-serif" font-size="16" font-weight="bold">80,000 UZS</text>
+    <rect x="145" y="122" width="55" height="24" rx="6" fill="#252b40"/>
+    <text x="172" y="137" fill="#e2e8f0" font-family="sans-serif" font-size="9" text-anchor="middle">Tanlash</text>
+  </g>
+
+  <!-- Service 2 -->
+  <g transform="translate(290, 270)">
+    <rect width="215" height="175" rx="10" fill="#181b29" stroke="#00f0ff" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="20" fill="#00f0ff" fill-opacity="0.2"/>
+    <text x="40" y="46" fill="#00f0ff" font-size="18" text-anchor="middle">💈</text>
+    <text x="70" y="44" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">Soqol Parvarishi</text>
+    <text x="25" y="85" fill="#94a3b8" font-family="sans-serif" font-size="11">Issiq sochiq, maxsus moylar bilan soqol shakllantirish.</text>
+    <text x="25" y="140" fill="#00f0ff" font-family="sans-serif" font-size="16" font-weight="bold">60,000 UZS</text>
+    <rect x="145" y="122" width="55" height="24" rx="6" fill="#00f0ff"/>
+    <text x="172" y="137" fill="#030712" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Tanlash</text>
+  </g>
+
+  <!-- Service 3 -->
+  <g transform="translate(530, 270)">
+    <rect width="215" height="175" rx="10" fill="#181b29" stroke="#2a2e42" stroke-width="1"/>
+    <circle cx="40" cy="40" r="20" fill="#00f0ff" fill-opacity="0.15"/>
+    <text x="40" y="46" fill="#00f0ff" font-size="18" text-anchor="middle">👑</text>
+    <text x="70" y="44" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">VIP Kompleks Xizmat</text>
+    <text x="25" y="85" fill="#94a3b8" font-family="sans-serif" font-size="11">Soch + soqol + yuz tozalash va massaj xizmati.</text>
+    <text x="25" y="140" fill="#00f0ff" font-family="sans-serif" font-size="16" font-weight="bold">130,000 UZS</text>
+    <rect x="145" y="122" width="55" height="24" rx="6" fill="#252b40"/>
+    <text x="172" y="137" fill="#e2e8f0" font-family="sans-serif" font-size="9" text-anchor="middle">Tanlash</text>
+  </g>
+</svg>
