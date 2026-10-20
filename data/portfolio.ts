@@ -307,6 +307,7 @@ export const portfolioData = {
   ] satisfies Project[],
 
   timeline: [
+    /*
     {
       id: "edu-1",
       title: "Axborot Texnologiyalari yo'nalishi bo'yicha talaba",
@@ -367,7 +368,8 @@ export const portfolioData = {
       ],
       isPlaceholder: true,
     },
-  ] satisfies TimelineItem[],
+    */
+  ] as TimelineItem[],
 
   contact: {
     badge: "Bog'lanish",

@@ -67,39 +67,44 @@ export default function Experience() {
         </div>
 
         {/* Informative placeholder notice */}
-        <div className="mb-10 max-w-2xl mx-auto p-4 rounded-xl bg-cyan-950/20 border border-cyan-500/30 text-xs text-center text-slate-300 flex items-center justify-center space-x-2">
-          <Sparkles className="w-4 h-4 text-cyan-400 shrink-0" />
-          <span>
-            Barcha sanalar va o&apos;quv dargohlari namunaviy kiritilgan. Ularni{" "}
-            <code className="text-cyan-300 font-mono">data/portfolio.ts</code> faylidan o&apos;zgartirishingiz mumkin.
-          </span>
-        </div>
+        {timeline.some((item) => item.isPlaceholder) && (
+          <div className="mb-10 max-w-2xl mx-auto p-4 rounded-xl bg-cyan-950/20 border border-cyan-500/30 text-xs text-center text-slate-300 flex items-center justify-center space-x-2">
+            <Sparkles className="w-4 h-4 text-cyan-400 shrink-0" />
+            <span>
+              Barcha sanalar va o&apos;quv dargohlari namunaviy kiritilgan. Ularni{" "}
+              <code className="text-cyan-300 font-mono">data/portfolio.ts</code> faylidan o&apos;zgartirishingiz mumkin.
+            </span>
+          </div>
+        )}
 
         {/* Timeline Filter */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
-          {[
-            { id: "all", label: "Barchasi" },
-            { id: "education", label: "Oliy Ta'lim" },
-            { id: "course", label: "Kurslar" },
-            { id: "self-learning", label: "Mustaqil O'rganish" },
-            { id: "project", label: "Loyihalar" },
-          ].map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setFilter(tab.id as typeof filter)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
-                filter === tab.id
-                  ? "bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 shadow-[0_0_12px_rgba(0,240,255,0.4)]"
-                  : "bg-white/60 dark:bg-slate-900/60 text-slate-600 dark:text-slate-300 hover:text-cyan-400 border border-slate-200 dark:border-slate-800"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
+        {timeline.length > 0 && (
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+            {[
+              { id: "all", label: "Barchasi" },
+              { id: "education", label: "Oliy Ta'lim" },
+              { id: "course", label: "Kurslar" },
+              { id: "self-learning", label: "Mustaqil O'rganish" },
+              { id: "project", label: "Loyihalar" },
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setFilter(tab.id as typeof filter)}
+                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  filter === tab.id
+                    ? "bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 shadow-[0_0_12px_rgba(0,240,255,0.4)]"
+                    : "bg-white/60 dark:bg-slate-900/60 text-slate-600 dark:text-slate-300 hover:text-cyan-400 border border-slate-200 dark:border-slate-800"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Vertical Timeline Structure */}
-        <div className="relative border-l-2 border-cyan-500/30 dark:border-cyan-500/20 ml-4 sm:ml-8 md:ml-32 space-y-12">
+        {filteredTimeline.length > 0 ? (
+          <div className="relative border-l-2 border-cyan-500/30 dark:border-cyan-500/20 ml-4 sm:ml-8 md:ml-32 space-y-12">
           {filteredTimeline.map((item) => (
             <div key={item.id} className="relative pl-6 sm:pl-8 group">
               {/* Timeline Glowing Node */}
@@ -160,7 +165,14 @@ export default function Experience() {
               </div>
             </div>
           ))}
-        </div>
+          </div>
+        ) : (
+          <div className="text-center py-12 px-6 rounded-2xl bg-white/40 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 max-w-xl mx-auto">
+            <p className="text-slate-500 dark:text-slate-400 text-sm">
+              Hozircha ta&apos;lim va tajriba ma&apos;lumotlari kiritilmagan.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
